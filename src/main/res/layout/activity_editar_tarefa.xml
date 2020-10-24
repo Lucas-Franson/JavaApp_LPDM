@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarTarefaActivity"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_add_tarefa2"
+        android:layout_width="201dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_login"
+        android:gravity="center"
+        android:text="@string/salvar_btn"
+        android:textColor="#339742"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.876" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSexta28"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_login"
+        android:checked="false"
+        android:text="@string/check_box_sabado"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxSexta27"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSexta23" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSexta27"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_login"
+        android:checked="false"
+        android:text="@string/check_box_sexta"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxSexta6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSexta22" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSexta26"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_login"
+        android:checked="false"
+        android:text="@string/check_box_quinta"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxSexta25"
+        app:layout_constraintTop_toBottomOf="@+id/repetir_lembrete4" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSexta25"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_login"
+        android:checked="false"
+        android:text="@string/check_box_quarta"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxSexta24"
+        app:layout_constraintTop_toBottomOf="@+id/repetir_lembrete4" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSexta24"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_login"
+        android:checked="false"
+        android:text="@string/check_box_terca"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxSexta23"
+        app:layout_constraintTop_toBottomOf="@+id/repetir_lembrete4" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSexta23"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_login"
+        android:checked="false"
+        android:text="@string/check_box_segunda"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxSexta22"
+        app:layout_constraintTop_toBottomOf="@+id/repetir_lembrete4" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSexta22"
+        android:layout_width="50dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_login"
+        android:checked="false"
+        android:text="@string/check_box_domingo"
+        android:textColor="#339742"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repetir_lembrete4" />
+
+    <TextView
+        android:id="@+id/repetir_lembrete4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/repetir_lembrete"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hora_spinnerEditar" />
+
+    <Spinner
+        android:id="@+id/hora_spinnerEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_lembrete4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/add_lembrete4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/add_lembrete"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricao_tarefaEditar" />
+
+    <EditText
+        android:id="@+id/descricao_tarefaEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/descricao_hint"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipo_tarefa_spinner7" />
+
+    <Spinner
+        android:id="@+id/tipo_tarefa_spinner7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSelecionarTipo4" />
+
+    <TextView
+        android:id="@+id/textViewSelecionarTipo4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/selecionar_tipo"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_tarefaEditar" />
+
+    <EditText
+        android:id="@+id/nome_tarefaEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/nome_nova_tarefa_hint"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNomeTarefa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:gravity="center_horizontal"
+        android:text="@string/nome_tarefa"
+        android:textAlignment="center"
+        android:textColor="#339742"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
