@@ -1,6 +1,23 @@
 <resources>
-    <string name="app_name">what do i do</string>
+    <string name="app_name">What Do I Do?</string>
     <string name="button_login">ENTRAR</string>
-    <string name="Text_logo">WHAT DO I DO</string>
+    <string name="Text_logo">WHAT DO I DO?</string>
     <string name="New_task">NOVA TAREFA</string>
+    <string name="new_task">Nova tarefa</string>
+    <string name="selecionar_tipo">Selecionar o tipo</string>
+    <string name="nome_nova_tarefa_hint">Título</string>
+    <string name="descricao_hint">Descrição</string>
+    <string name="add_lembrete">Adicionar um lembrete</string>
+    <string name="repetir_lembrete">Repetir lembrete</string>
+    <string name="check_box_domingo">D</string>
+    <string name="check_box_segunda">S</string>
+    <string name="check_box_terca">T</string>
+    <string name="check_box_quarta">Q</string>
+    <string name="check_box_quinta">Q</string>
+    <string name="check_box_sexta">S</string>
+    <string name="check_box_sabado">S</string>
+    <string name="adicionar_nova_tarefa_btn">ADICIONAR</string>
+    <string name="salvar_btn">SALVAR</string>
+    <string name="nome_tarefa">Nome tarefa</string>
+
 </resources>

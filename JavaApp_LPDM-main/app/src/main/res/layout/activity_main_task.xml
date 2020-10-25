@@ -4,24 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainTaskActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/raleway_normal"
-        android:text="@string/Text_logo"
-        android:textColor="#339742"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027" />
+    tools:context=".MainTaskActivity"
+    android:padding="16dp"
+    android:orientation="vertical">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/newtask"
         android:layout_width="201dp"
         android:layout_height="50dp"
         android:layout_marginBottom="56dp"
@@ -34,28 +22,157 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
+        android:id="@+id/tarefa1"
+        android:layout_width="32dp"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="161dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textodata" />
+
+    <Button
+        android:id="@+id/task1details"
+        android:layout_width="310dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_login"
+        android:onClick="onClickTarefa"
+        android:text="@string/New_task"
+        android:textColor="#339742"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textodata" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
-        android:layout_width="wrap_content"
+        android:id="@+id/tarefa2"
+        android:layout_width="32dp"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="211dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textodata" />
+
+    <Button
+        android:id="@+id/task2details"
+        android:layout_width="310dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_login"
+        android:onClick="onClickTarefa"
+        android:text="@string/New_task"
+        android:textColor="#339742"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task1details" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/tarefa3"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textodata" />
+
+    <Button
+        android:id="@+id/task3details"
+        android:layout_width="310dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_login"
+        android:onClick="onClickTarefa"
+        android:text="@string/New_task"
+        android:textColor="#339742"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task2details" />
+
+    <CheckBox
+        android:id="@+id/tarefa4"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="141dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textodata" />
+
+    <Button
+        android:id="@+id/task4details"
+        android:layout_width="310dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_login"
+        android:onClick="onClickTarefa"
+        android:text="@string/New_task"
+        android:textColor="#339742"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task3details" />
+
+    <CheckBox
+        android:id="@+id/tarefa5"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="179dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textodata" />
+
+    <Button
+        android:id="@+id/task5details"
+        android:layout_width="310dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button_login"
+        android:onClick="onClickTarefa"
+        android:text="@string/New_task"
+        android:textColor="#339742"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task4details" />
+
+    <TextView
+        android:id="@+id/textodata"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="260dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Hoje"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeapp" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="25/10/2020"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toEndOf="@+id/textodata"
+        app:layout_constraintTop_toBottomOf="@+id/nomeapp" />
+
+    <ImageView
+        android:id="@+id/nomeapp"
+        android:layout_width="363dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/titulo_img"
+        tools:ignore="MissingConstraints"
+        android:gravity= "center"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

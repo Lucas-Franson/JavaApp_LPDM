@@ -8,7 +8,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_add_tarefa"
         android:layout_width="201dp"
         android:layout_height="50dp"
         android:background="@drawable/button_login"
@@ -27,7 +27,7 @@
         android:layout_width="224dp"
         android:layout_height="260dp"
         android:layout_marginTop="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/button_add_tarefa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
