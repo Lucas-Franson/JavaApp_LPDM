@@ -12,6 +12,7 @@
         android:id="@+id/newtask"
         android:layout_width="201dp"
         android:layout_height="50dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="56dp"
         android:background="@drawable/button_login"
         android:onClick="onClickNovaTarefa"
@@ -19,117 +20,8 @@
         android:textColor="#339742"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <CheckBox
-        android:id="@+id/tarefa1"
-        android:layout_width="32dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="31dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textodata" />
-
-    <Button
-        android:id="@+id/task1details"
-        android:layout_width="310dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/button_login"
-        android:onClick="onClickTarefa"
-        android:text="@string/New_task"
-        android:textColor="#339742"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textodata" />
-
-    <CheckBox
-        android:id="@+id/tarefa2"
-        android:layout_width="32dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="68dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textodata" />
-
-    <Button
-        android:id="@+id/task2details"
-        android:layout_width="310dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/button_login"
-        android:onClick="onClickTarefa"
-        android:text="@string/New_task"
-        android:textColor="#339742"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/task1details" />
-
-    <CheckBox
-        android:id="@+id/tarefa3"
-        android:layout_width="32dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="104dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textodata" />
-
-    <Button
-        android:id="@+id/task3details"
-        android:layout_width="310dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/button_login"
-        android:onClick="onClickTarefa"
-        android:text="@string/New_task"
-        android:textColor="#339742"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/task2details" />
-
-    <CheckBox
-        android:id="@+id/tarefa4"
-        android:layout_width="32dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="141dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textodata" />
-
-    <Button
-        android:id="@+id/task4details"
-        android:layout_width="310dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/button_login"
-        android:onClick="onClickTarefa"
-        android:text="@string/New_task"
-        android:textColor="#339742"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/task3details" />
-
-    <CheckBox
-        android:id="@+id/tarefa5"
-        android:layout_width="32dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="179dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textodata" />
-
-    <Button
-        android:id="@+id/task5details"
-        android:layout_width="310dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/button_login"
-        android:onClick="onClickTarefa"
-        android:text="@string/New_task"
-        android:textColor="#339742"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/task4details" />
+        app:layout_constraintTop_toBottomOf="@+id/task_list" />
 
     <TextView
         android:id="@+id/textodata"
@@ -138,7 +30,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
-        android:text="Hoje"
+        android:text="@string/hoje"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nomeapp" />
@@ -150,7 +42,6 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="25/10/2020"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.968"
@@ -173,6 +64,18 @@
         tools:ignore="MissingConstraints"
         android:gravity= "center"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/task_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

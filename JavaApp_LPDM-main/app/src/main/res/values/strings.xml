@@ -19,5 +19,13 @@
     <string name="adicionar_nova_tarefa_btn">ADICIONAR</string>
     <string name="salvar_btn">SALVAR</string>
     <string name="nome_tarefa">Nome tarefa</string>
-
+    <string name="hoje">Hoje</string>
+    <string name="deletar_tarefa">Deletar tarefa</string>
+    <string name="lembrete">Lembrete:</string>
+    <string-array name="tipos_task">
+        <item>Trabalho</item>
+        <item>Faculdade</item>
+        <item>Casa</item>
+        <item>Estudos</item>
+    </string-array>
 </resources>

@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EditarTarefaActivity"></activity>
-        <activity android:name=".CriarTaskActivity" />
+        <activity android:name=".ItemTaskActivity" />
         <activity android:name=".TaskActivity" />
         <activity android:name=".MainTaskActivity" />
         <activity android:name=".LoginActivity">
@@ -20,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <!-- Receiver do alarme -->
+        <receiver android:name=".AlarmReceiver" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
